@@ -28,4 +28,8 @@
 * │   └── npm.js
 *
 *4 directories, 22 files
-*
+##Installation
+*Install NodeJS and NPM following these instructions https://docs.npmjs.com/getting-started/installing-node
+*run <code>npm install</code> to install dependencies
+*run node server.js to start server
+*navigate to <code> http://localhost:8080 </code> 
