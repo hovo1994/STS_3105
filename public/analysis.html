@@ -20,15 +20,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style type="text/css">
-    img {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-    }
+
     </style>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+    $(function() {
+        $("#accordion").accordion();
+    });
+    </script>
 </head>
 
 <body>
@@ -55,12 +54,33 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">
+    <div class="header">
         <div class="starter-template">
             <h1>Analysis</h1>
-            <img src="http://www.placecage.com/c/500/300" width="90%"></img>
         </div>
     </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Analysis 1 <span class="text-muted">Soem Analysis Description.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Analysis topic 2 <span class="text-muted">Analysis stuffs Description.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
     <!-- /.container -->
 </body>
 

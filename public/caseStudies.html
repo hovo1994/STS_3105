@@ -19,6 +19,29 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function() {
+        $("#accordion").accordion();
+    });
+    </script>
+    <style>
+    #panel-body {
+        text-align: left;
+    }
+    
+    #cpr {
+        
+        position: relative;
+        float: right;
+        overflow: hidden;
+    }
+    
+    #cprinterview {
+        position: relative;
+        float: left;
+        overflow: hidden;
+    }
+    </style>
 </head>
 
 <body>
@@ -45,33 +68,70 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="header">
+    <div class="container">
         <div class="starter-template">
             <h1>Case Studies</h1>
+            <div class="bs-example">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Lucas II Automated CPR Device </a>
+                </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>The Lucas II Automated CPR (cardiopulmonary resuscitation) device provides mechanical chest compressions to deliver quality, consistent CPR to patients in cardiac arrest. In a study conducted by inducing cardiac arrest on live pigs found that manual CPR achieved a return of spontaneous circulation in only three of the eight test subjects. The Lucas II device was able to achieve a return of spontaneous circulation in all eight of the pig test subjects on which it was used. Approximately 2000 compressions were delivered by the Lucas II device during the simulated cardiac arrest, while an average of sixty less were delivered by the paramedics performing manual CPR. Finally, the pressure measured in the aorta during manual CPR was found to be an average of 10 mmHg less than pressure in the aorta of pigs receiving automated CPR compressions. </p>
+                                <div id="cprinterview">
+                                    <video width="620" controls>
+                                        <source src="cprinterview.mp4" type="video/mp4" />
+                                        <!-- fallback -->
+                                        Your browser does not support the <code>video</code> element.
+                                    </video>
+                                </div>
+                                <div id="cpr">
+                                    <video width="200" muted loop autoplay>
+                                        <source src="cpr.mp4" type="video/mp4" />
+                                        <!-- fallback -->
+                                        Your browser does not support the <code>video</code> element.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Stryker Patient Loading System</a>
+                </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>An ambulance company in Oklahoma found that in 2010 their emergency medical providers experienced 39 back injuries related to cot-lifting. Faced with increasing patient weights, the agency often needed to call for lifting assistance from the fire department when transporting heavier patients (which costs valuable time when dealing with critical patients). An astonishing 73% of workman’s compensation claims in one year were due to cot-lifting associated injuries, and cost a total of $251,000 for the ambulance company. Since implementing the Stryker Power-PRO XT automated cot and Power-LOAD cot fastening system, the ambulance company’s crew have experienced zero injuries related to cot-lifting. The agency’s bottom line has also been affected as less crew are needed to lift larger sized patients. </p>
+                                <video width="500" controls id="lift">
+                                    <source src="lift.mp4" type="video/mp4" />
+                                    <!-- fallback -->
+                                    Your browser does not support the <code>video</code> element.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">More Stuff Here </a>
+                </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Here is some more stuff</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Case Study 1. <span class="text-muted">Soem Case Study Description.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Case Study 2. <span class="text-muted">Soem Case Study Description.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-    </div>
-    <hr class="featurette-divider">
-    <!-- /END THE FEATURETTES -->
 </body>
 
 </html>
